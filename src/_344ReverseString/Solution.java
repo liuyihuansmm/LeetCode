@@ -20,6 +20,8 @@ public class Solution {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(new Solution().reverseString("liuyihuans"));
+		//最简单的方法！！！
+		System.out.println(new StringBuffer("liuyihuans").reverse());
 	}
 
 }

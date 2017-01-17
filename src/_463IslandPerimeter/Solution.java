@@ -9,7 +9,6 @@ public class Solution {
     	 */
     	int sum=0;
     	int countNeber = 0;
-    	int x,y;
     	
     	for(int i=0; i<grid.length; i++){
     		for(int j=0;j<grid[i].length;j++){
@@ -24,13 +23,12 @@ public class Solution {
     			}
     		}
     	}
-    	System.out.println(sum+","+countNeber);
     	return sum*4-countNeber*2;
     }
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] grid={{0,1,0,0},{1,1,1,0},{0,1,0,0},{1,1,0,0}};
+		int[][] grid={{1,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,0,0}};
 		System.out.println(new Solution().islandPerimeter(grid));
 	}
 

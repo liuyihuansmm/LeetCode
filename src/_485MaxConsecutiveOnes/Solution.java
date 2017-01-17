@@ -6,6 +6,21 @@ package _485MaxConsecutiveOnes;
  *
  */
 public class Solution {
+	
+	/**
+	 * 投票最高答案
+	 * @param nums
+	 * @return
+	 */
+	public int findMaxConsecutiveOnes666(int[] nums){
+		int max=0,maxHere=0;
+		for(int n:nums){
+			max = Math.max(max, maxHere=n==0?0:maxHere+1);
+		}
+		return max;
+		
+	}
+	
     public int findMaxConsecutiveOnes(int[] nums) throws Exception {
         if(nums.length>10000){
         	throw new Exception("数组长度超过10000");
